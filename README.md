@@ -21,25 +21,32 @@ A full-stack team task management application with role-based access (Admin & Me
 - Auth: JWT
 - Deployment: Railway
 
-⚙️ Setup
+ # 🌐 Live Demo
 
-# Backend
+Frontend: https://team-sync-zeta-five.vercel.app/ 
+
+Backend: https://teamsync-production-592e.up.railway.app/
+
+
+
+
+# ⚙️ Setup
+
+
 
 ```bash
+Backend Setup
+
 cd server
 npm install
 npm run dev
 
-# Frontend
+Frontend Setup
 
 cd client
 npm install
 npm run dev
 
-🌐 Live Demo
-
-Frontend: https://team-sync-zeta-five.vercel.app/ 
-Backend: https://teamsync-production-592e.up.railway.app/
 
 
 
