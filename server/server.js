@@ -1,30 +1,7 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
-require("dotenv").config();
+const app = require("./app");
 
-const app = express();
-
-// Middleware
-app.use(cors());
-app.use(express.json());
-
-// Routes
-app.use("/api/auth", require("./routes/authRoutes"));
-app.use("/api/projects", require("./routes/projectRoutes"));
-app.use("/api/tasks", require("./routes/taskRoutes"));
-
-// Home Route
-app.get("/", (req, res) => {
-  res.send("TeamSync Backend Running");
-});
-
-// DB Connect
-mongoose.connect(process.env.MONGO_URI)
-.then(() => console.log("MongoDB Connected"))
-.catch((err) => console.log(err));
-
-// Server Start
+// Local dev entry point only — Vercel doesn't run this file, it imports
+// app.js directly via api/index.js and manages the listening itself.
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
