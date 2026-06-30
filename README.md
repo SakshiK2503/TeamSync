@@ -21,31 +21,46 @@ A full-stack team task management application with role-based access (Admin & Me
 - Auth: JWT
 - Deployment: Railway
 
-⚙️ Setup
-
-# Backend
-
-```bash
-cd server
-npm install
-npm run dev
-
-# Frontend
-
-cd client
-npm install
-npm run dev
-
-🌐 Live Demo
+ # 🌐 Live Demo
 
 Frontend: https://team-sync-zeta-five.vercel.app/ 
+
 Backend: https://teamsync-production-592e.up.railway.app/
 
 
 
 
+# ⚙️ Setup
 
+Backend
 
+```bash
 
+cd server
+npm install
+npm run dev
+```
+Frontend 
+
+```bash
+
+cd client
+npm install
+npm run dev
+```
+## 🔑 Environment Variables
+
+Create a `.env` file inside the `/server` folder:
+
+```env
+MONGO_URI=your_mongodb_atlas_connection_string
+JWT_SECRET=your_jwt_secret_key
+```
+## 🚀 Future Enhancements
+
+- AI-based task generation from project descriptions
+- Task comments and activity tracking
+- Real-time updates (WebSockets)
+  
 
 
